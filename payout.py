@@ -19,18 +19,19 @@ client = Mongo.Mongo()
 ################################################################
 # Define the payout calculation here
 ################################################################
-public_key = "B62qpge4uMq4Vv5Rvc8Gw9qSquUYd6xoW1pz7HQkMSHm6h1o7pvLPAN"  # Public key of the block producer
-staking_epoch = 7  # To ensure we only get blocks from the current staking epoch as the ledger may be different
+public_key = "B62qijDC2gCTtcqYGnUAc9YgH2Uw4fzr8xEKKL4faZmWyAypgEe3oWC"  # Public key of the block producer
+staking_epoch = 64  # To ensure we only get blocks from the current staking epoch as the ledger may be different
 latest_block = False  # If not set will get the latest block from MinaExplorer or fix the latest height here
 fee = 0.05  # The fee percentage to charge
 min_height = 0  # This can be the last known payout or this could vary the query to be a starting date
 confirmations = 15  # Can set this to any value for min confirmations up to `k`. 15 is recommended.
 store = False  # Do we want to store this
 foundation_delegations = [
-    "B62qmsYXFNNE565yv7bEMPsPnpRCsMErf7J2v5jMnuKQ1jgwZS8BzXS",
-    "B62qn71s63yywMUCcFhP4iCata7HpgyrvmGjpKa1D9544vGW6FBZ6a1",
-    "B62qqEV4oP7w2jLQGckvZzdWjfdLKySKHJ3tNU5niRjpPD7beYumWTB",
-    "B62qmQAFPta1Q3c7wXHxXRKnE3uWyBYZCLb8frdHEgavi3BbBVkpeC1"
+    "B62qqoKGQqxvrP3F8JQDubvLednJJs51oJSkHPnJRZPuwL9FT4oyN1x",
+    "B62qnhrUFMCj5n5yiPuXcQYqKh9d22ZWMW9LNxGdF1FkhqAT3B8KmgQ",
+    "B62qmyesxfYnG3SY9KET8jmEzK5PTWRZQhTpcfcywkeUJbzWXqqXEbE",
+    "B62qoc784wK4DHdokDqHNcZWQdi9zkzgQc4n8cSRgX6VVBm6AgCShoY",
+    "B62qn71s63yywMUCcFhP4iCata7HpgyrvmGjpKa1D9544vGW6FBZ6a1"
 ]  # Could determine this from an API / predefined list but hardcoded for development
 coinbase = 720000000000  # Later we can set this dynamically - this is because we don't care about supercharged for Foundation
 
